@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wilson Galdamez - Bio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin-left: 20px;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #b30000;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      color: #ffffff;
+    }
+
+    #bio img {
+      border-radius: 8px;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    #bio p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ff4c4c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    .video-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .embed-responsive {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .embed-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Wilson Galdamez</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="bio">
+      <h1>About Wilson Galdamez</h1>
+      <img src="assets/images/your-photo.jpg" alt="Wilson Galdamez" width="200" />
+      <p>Hello! I'm Wilson, a 23-year-old enthusiast from Mount Kisco, having moved here from the vibrant streets of Brooklyn. My journey has been anything but ordinary, fueled by a lifelong passion for skateboarding, a keen interest in sports, and a dabbling in martial arts. Despite my active lifestyle, nothing compares to the joy I find in spending quality time with my family. Currently, I'm embracing the challenges and rewards of working full-time at Homegoods.</p>
+      <p>My dream of becoming a software engineer started in my childhood, a vision that has grown with me over the years. As I stand on the brink of my future, eager and optimistic, I look forward to the opportunities and adventures it holds for me. Join me on this exciting journey as I transition from the retail aisles of Homegoods to the innovative avenues of software engineering.</p>
+      <p>You can find me on <a href="https://github.com/Willie-Byte" target="_blank">GitHub</a> or connect with me on LinkedIn at <a href="https://www.linkedin.com/in/wilson-galdamez-977239303/" target="_blank">LinkedIn</a>. The best way to reach out to me is via email or LinkedIn message. Can't wait to see what the future has in store!</p>
+    </section>
+
+    <div class="video-container">
+      <div class="embed-responsive">
+        <iframe src="https://www.youtube.com/embed/evUXKcHDjEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
