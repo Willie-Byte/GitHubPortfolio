@@ -2,132 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wilson Galdamez - Bio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilson Galdamez | Software Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar {
-      background-color: #1a1a1a;
-      color: #ffffff;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    .nav-menu {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-item {
-      margin-left: 20px;
-    }
-
-    .nav-link {
-      color: #ffffff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #b30000;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    h1 {
-      color: #ffffff;
-    }
-
-    #bio img {
-      border-radius: 8px;
-      margin-bottom: 20px;
-      max-width: 100%;
-    }
-
-    #bio p {
-      line-height: 1.6;
-    }
-
-    a {
-      color: #ff4c4c;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #ffffff;
-    }
-
-    .video-container {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .embed-responsive {
-      position: relative;
-      display: block;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .embed-responsive iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html" class="nav-logo">Wilson Galdamez</a>
-    <ul class="nav-menu">
-      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-    </ul>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Wilson Galdamez</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="container">
-    <section id="bio">
-      <h1>About Wilson Galdamez</h1>
-      <img src="assets/images/your-photo.jpg" alt="Wilson Galdamez" width="200" />
-      <p>Hello! I'm Wilson, a 23-year-old enthusiast from Mount Kisco, having moved here from the vibrant streets of Brooklyn. My journey has been anything but ordinary, fueled by a lifelong passion for skateboarding, a keen interest in sports, and a dabbling in martial arts. Despite my active lifestyle, nothing compares to the joy I find in spending quality time with my family. Currently, I'm embracing the challenges and rewards of working full-time at Homegoods.</p>
-      <p>My dream of becoming a software engineer started in my childhood, a vision that has grown with me over the years. As I stand on the brink of my future, eager and optimistic, I look forward to the opportunities and adventures it holds for me. Join me on this exciting journey as I transition from the retail aisles of Homegoods to the innovative avenues of software engineering.</p>
-      <p>You can find me on <a href="https://github.com/Willie-Byte" target="_blank">GitHub</a> or connect with me on LinkedIn at <a href="https://www.linkedin.com/in/wilson-galdamez-977239303/" target="_blank">LinkedIn</a>. The best way to reach out to me is via email or LinkedIn message. Can't wait to see what the future has in store!</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-tag">Software Developer Portfolio</p>
+          <h1>Hi, I’m Wilson Galdamez</h1>
+          <p class="hero-description">
+            I am an aspiring software developer focused on full-stack development,
+            backend systems, cloud technologies, and practical real-world applications.
+            I enjoy building projects with JavaScript, React, Node.js, MongoDB, Python,
+            and modern development workflows.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="https://github.com/Willie-Byte" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+            <a href="https://www.linkedin.com/in/wilson-galdamez-977239303/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="video-container">
-      <div class="embed-responsive">
-        <iframe src="https://www.youtube.com/embed/evUXKcHDjEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>
+            I am from Mount Kisco, New York, and I have been working toward becoming a software engineer
+            by consistently building projects and expanding my technical skills. My path has been shaped by
+            hard work, curiosity, and a strong interest in technology, problem-solving, and continuous growth.
+          </p>
+          <p>
+            I have experience building front-end and full-stack applications, and I enjoy learning how systems
+            work from both the user side and the backend side. I am especially interested in creating software
+            that is useful, scalable, and professionally structured.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <h2>What I’ve Worked On</h2>
+
+        <div class="grid">
+          <div class="project-card">
+            <h3>Health App</h3>
+            <p>
+              A healthcare-focused project that highlights backend structure, organized data handling,
+              and application design for practical health technology workflows.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>AI Chat Assistant</h3>
+            <p>
+              An AI-powered full-stack application that demonstrates API integration, interactive user
+              experiences, and modern development practices.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>MERN Azure Castle</h3>
+            <p>
+              A full-stack MERN application that reflects my experience with MongoDB, Express, React,
+              and Node.js while also connecting with my interest in cloud technologies.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>MiniDigMasters Frontend</h3>
+            <p>
+              A React frontend for an equipment sales platform that demonstrates responsive layouts,
+              component organization, and professional UI structure.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>JavaScript Projects</h3>
+            <p>
+              Projects like PacMen, Eye Exercise, and Real Time Bus Tracking helped me strengthen my
+              understanding of DOM manipulation, interactivity, animation, and real-time data display.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Cloud and DevOps Learning</h3>
+            <p>
+              I have also spent time learning about cloud platforms, deployment workflows, and tools
+              such as Docker, Kubernetes, Azure, and Jenkins.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Technical Interests</h2>
+        <div class="grid small-grid">
+          <div class="info-card">Full-Stack Web Development</div>
+          <div class="info-card">Backend Systems</div>
+          <div class="info-card">Cloud Technologies</div>
+          <div class="info-card">AI Applications</div>
+          <div class="info-card">React and JavaScript</div>
+          <div class="info-card">MongoDB and APIs</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <h2>Beyond Coding</h2>
+        <div class="card">
+          <p>
+            Outside of software development, I enjoy video games, technology, and learning more about the
+            hardware and systems that power modern applications and gaming experiences. I also like following
+            new developments in AI, cloud computing, and software engineering.
+          </p>
+          <p>
+            My journey into tech has been driven not only by career goals, but also by genuine curiosity.
+            I enjoy building, improving, and understanding things at a deeper level, whether that is in
+            software, hardware, or creative technical projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Introduction Video</h2>
+        <div class="video-container">
+          <div class="embed-responsive">
+            <iframe
+              src="https://www.youtube.com/embed/evUXKcHDjEQ"
+              title="Wilson Galdamez Introduction Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
