@@ -1,158 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wilson Galdamez | Projects</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilson Galdamez | Projects</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Wilson Galdamez</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Wilson Galdamez</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero projects-hero">
+      <div class="container">
+        <p class="hero-tag center-tag">Portfolio Projects</p>
+        <h1 class="hero-title">Projects That Show Full-Stack, Cloud, AI, and Security Engineering</h1>
+        <p class="hero-description hero-description-center">
+          A collection of projects built to demonstrate practical software development, backend design,
+          frontend polish, cloud deployment thinking, API integration, and systems architecture.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="aura">
+      <div class="container">
+        <article class="case-study-card">
+          <div class="case-study-content">
+            <p class="section-kicker">Featured Case Study</p>
+            <h2>Aura V2 — Autonomous Cloud Remediation Engine</h2>
+            <p>
+              An enterprise-style cloud security remediation platform that detects cloud misconfigurations
+              and runtime security events, then routes them through AI-assisted remediation, human approval,
+              Kafka event streaming, and audit-ready execution results.
+            </p>
+            <div class="tag-row large-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>React</span>
+              <span>Kafka</span>
+              <span>Azure AKS</span>
+              <span>Kubernetes</span>
+              <span>Tetragon eBPF</span>
+            </div>
+            <div class="case-bullets">
+              <div><strong>Problem</strong><p>Cloud teams need safer ways to detect risky activity and coordinate remediation workflows.</p></div>
+              <div><strong>Solution</strong><p>Telemetry flows into Kafka, remediation plans are generated, and approvals gate execution.</p></div>
+              <div><strong>Result</strong><p>Simulates an 80% MTTR reduction with enterprise-style security workflow visibility.</p></div>
+            </div>
+            <div class="hero-buttons">
+              <a href="https://github.com/Willie-Byte/aura-v2-cloud-remediation-engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+          <div class="case-visual">
+            <div class="mini-window-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-lines">
+              <p><b>telemetry</b> → raw-telemetry topic</p>
+              <p><b>orchestrator</b> → remediation-commands</p>
+              <p><b>approval</b> → approval-decisions</p>
+              <p><b>worker</b> → execution-results</p>
+              <p><b>audit</b> → review trail complete</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Full-Stack Projects</p>
+          <h2>Application Builds</h2>
         </div>
-    </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <p class="hero-tag">Portfolio Projects</p>
-                    <h1>My Projects</h1>
-                    <p class="hero-description">
-                        Here are some of the projects I have built while developing my skills in
-                        full-stack development, frontend design, backend systems, APIs, cloud tools,
-                        security engineering, and practical software architecture.
-                    </p>
-                </div>
+        <div class="project-grid-modern">
+          <article class="feature-card" id="health">
+            <div class="card-topline">
+              <h3>Health App</h3>
+              <span class="status-pill">Healthcare</span>
             </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2>Featured Full-Stack and Technical Projects</h2>
-
-                <div class="grid">
-                    <div class="project-card">
-                        <h3>Aura V2 — Autonomous Cloud Remediation Engine</h3>
-                        <p>
-                            An enterprise-style cloud security remediation platform that detects cloud
-                            misconfigurations and live runtime security events, then routes them through
-                            an AI-assisted remediation workflow with human approval and audit visibility.
-                            The system uses Node.js, Express, MongoDB, React, Kafka, Azure AKS,
-                            Kubernetes, and Tetragon eBPF telemetry to detect live pod exec activity
-                            and safely publish simulated execution results after approval.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/aura-v2-cloud-remediation-engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Health App</h3>
-                        <p>
-                            A healthcare-focused application that reflects my interest in building
-                            practical software for real-world use cases. This project highlights backend
-                            organization, structured data handling, and full-stack application design
-                            for health technology workflows.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/Health-App" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>MERN Azure Castle</h3>
-                        <p>
-                            A full-stack MERN application that showcases my experience building modern
-                            web applications with MongoDB, Express, React, and Node.js. This project
-                            also reflects my interest in cloud-focused development, deployment workflows,
-                            and scalable application architecture.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/mern-azure-castle" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>AI Chat Assistant</h3>
-                        <p>
-                            An AI-powered chat application that demonstrates my ability to integrate APIs,
-                            develop full-stack functionality, and create interactive user experiences.
-                            This project represents my interest in intelligent software systems, modern
-                            web development, and practical AI integration.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/ai-chat-assistant" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>MiniDigMasters Frontend</h3>
-                        <p>
-                            A React-based frontend for an equipment sales website built to support a
-                            professional e-commerce experience. This project demonstrates my skills in
-                            component-based design, state management, responsive layouts, and frontend
-                            API integration for a modern shopping platform.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/minidig-frontend" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
+            <p>
+              A healthcare-focused application that reflects practical backend structure,
+              organized data handling, and full-stack application design for health technology workflows.
+            </p>
+            <div class="tag-row">
+              <span>FastAPI</span>
+              <span>Backend</span>
+              <span>Data Workflows</span>
             </div>
-        </section>
-
-        <section class="section alt-section">
-            <div class="container">
-                <h2>Frontend and JavaScript Projects</h2>
-
-                <div class="grid">
-                    <div class="project-card">
-                        <h3>PacMen Exercise</h3>
-                        <p>
-                            A JavaScript animation project focused on DOM manipulation, event handling,
-                            and timing functions. This exercise helped strengthen my understanding of
-                            dynamic front-end behavior and interactive browser-based experiences.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/PacMen.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                            <a href="https://willie-byte.github.io/PacMen.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Project</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Eye Exercise</h3>
-                        <p>
-                            An interactive front-end project built with HTML, CSS, and JavaScript where
-                            animated eyes follow the user's cursor. This project demonstrates creative
-                            UI behavior, JavaScript event tracking, and responsive visual interaction.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/Eye-Exercise.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                            <a href="https://willie-byte.github.io/Eye-Exercise.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Project</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Real Time Bus Tracking</h3>
-                        <p>
-                            A real-time map application that uses MBTA data and Leaflet.js to display
-                            live bus locations. This project highlights my ability to work with APIs,
-                            map libraries, and real-time data visualization in JavaScript applications.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/Willie-Byte/RealTimeBusTracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
-                            <a href="https://willie-byte.github.io/RealTimeBusTracker/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live Project</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/Health-App" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
             </div>
-        </section>
-    </main>
+          </article>
+
+          <article class="feature-card" id="castle">
+            <div class="card-topline">
+              <h3>MERN Azure Castle</h3>
+              <span class="status-pill">E-commerce</span>
+            </div>
+            <p>
+              A full-stack MERN application built with MongoDB, Express, React, and Node.js while also
+              connecting with cloud-focused development and scalable application architecture.
+            </p>
+            <div class="tag-row">
+              <span>MongoDB</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Azure</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/mern-azure-castle" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-topline">
+              <h3>AI Chat Assistant</h3>
+              <span class="status-pill">AI App</span>
+            </div>
+            <p>
+              An AI-powered chat application showing API integration, full-stack functionality,
+              interactive user experiences, and practical AI integration with a modern web stack.
+            </p>
+            <div class="tag-row">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>AI API</span>
+              <span>Full Stack</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/ai-chat-assistant" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-topline">
+              <h3>MiniDigMasters Frontend</h3>
+              <span class="status-pill">Frontend</span>
+            </div>
+            <p>
+              A React-based frontend for an equipment sales platform, focused on responsive layouts,
+              component organization, professional UI, and API-ready shopping flows.
+            </p>
+            <div class="tag-row">
+              <span>React</span>
+              <span>E-commerce</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/minidig-frontend" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Frontend and JavaScript</p>
+          <h2>Interactive Browser Projects</h2>
+        </div>
+
+        <div class="project-grid-modern three-col">
+          <article class="feature-card compact-card">
+            <h3>PacMen Exercise</h3>
+            <p>
+              A JavaScript animation project focused on DOM manipulation, event handling,
+              and timing functions for dynamic browser behavior.
+            </p>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/PacMen.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+              <a href="https://willie-byte.github.io/PacMen.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live</a>
+            </div>
+          </article>
+
+          <article class="feature-card compact-card">
+            <h3>Eye Exercise</h3>
+            <p>
+              An interactive front-end project where animated eyes follow the cursor,
+              demonstrating JavaScript event tracking and creative UI behavior.
+            </p>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/Eye-Exercise.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+              <a href="https://willie-byte.github.io/Eye-Exercise.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live</a>
+            </div>
+          </article>
+
+          <article class="feature-card compact-card">
+            <h3>Real Time Bus Tracking</h3>
+            <p>
+              A real-time map application using MBTA data and Leaflet.js to display live bus locations
+              with API-driven data visualization.
+            </p>
+            <div class="card-actions">
+              <a href="https://github.com/Willie-Byte/RealTimeBusTracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+              <a href="https://willie-byte.github.io/RealTimeBusTracker/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Wilson Galdamez. Portfolio projects and case studies.</p>
+  </footer>
 </body>
 </html>
